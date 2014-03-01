@@ -1,7 +1,7 @@
 # wracer
 
 Visualizes one of the coolest core.async features: [alt!](http://clojure.github.io/core.async/#clojure.core.async/alt!), 
-by "selecting" on several HTTP GET and a timeout channels, and rendering the winner's stats and HTML response.
+by "selecting" on several HTTP GETs and a timeout channels, and rendering the winner's stats and HTML response.
 
 HTTP GETs are also async, and merely put their responses on a channel, which they then return.
 
@@ -21,13 +21,13 @@ Here is the race (clojurescript):
         t                          ([v] (show-timeout timeout-ms))))))
 ```
 
-Once a winner is determined or the timeout channel returns nil ("times out"), the response will be rendered:
+Once a winner is determined or a timeout channel returns nil ("times out"), the response is rendered:
 
 <p align="center">
   <img src="https://github.com/tolitius/wracer/raw/master/docs/wracer-in-action.png" alt="wracer in action"/>
 </p>
 
-It of course has nothing to do with a real world benchmarking of any kind, but it does serve as an interactive visual of "alt!" doing it magic.
+It of course has nothing to do with real world benchmarking of any kind, but it does serve as an interactive visual of "alt!" doing its magic.
 
 ## usage / start the app
 
