@@ -32,3 +32,7 @@ wracer.repl=> (def $alert (sel1 :.alert))
 wracer.repl=> (dom/set-html! $alert "hi from repl")
 #<[object HTMLDivElement]>
 ```
+
+<p align="center">
+  <img src="https://github.com/tolitius/wracer/raw/master/docs/hi-from-repl.png" alt="connecting browser to REPL"/>
+</p>
