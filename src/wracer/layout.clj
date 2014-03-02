@@ -1,5 +1,6 @@
 (ns wracer.layout
   (:require
+    [cemerick.austin.repls :refer [browser-connected-repl-js]]
     [hiccup
       [page :refer [html5 include-js include-css]]]))
 
@@ -9,7 +10,8 @@
 
 (defn with-js []
   (list
-   (include-js "/js/wracer.js")))
+   (include-js "/js/wracer.js")
+   [:script (browser-connected-repl-js)]))
 
 (defn say [content]
   (html5

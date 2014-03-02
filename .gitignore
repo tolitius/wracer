@@ -3,11 +3,14 @@
 /classes
 /checkouts
 /resources/public/cljs/*
+out
+wracer.js
 pom.xml
 *.jar
 *.class
 .DS_Store
 *.swp
+.repl
 .lein-deps-sum
 .lein-failures
 .lein-plugins

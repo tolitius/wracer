@@ -1,13 +1,14 @@
 # wracer
 
-Visualizes one of the coolest core.async features: [alt!](http://clojure.github.io/core.async/#clojure.core.async/alt!), 
+Visualizes one of the coolest [core.async](https://github.com/clojure/core.async) 
+features: [alt!](http://clojure.github.io/core.async/#clojure.core.async/alt!), 
 by "selecting" on several HTTP GET and a timeout channels, and rendering the winner's stats and HTML response.
 
 HTTP GETs are also async, and merely put their responses on a channel, which they then return.
 
 ## show me
 
-Here is the race (clojurescript):
+Here is the race ([clojurescript](https://github.com/tolitius/wracer/blob/master/src/wracer/cljs/wracer.cljs)):
 
 ```clojure
 (defn race [q]

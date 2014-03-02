@@ -44,4 +44,5 @@
   (render el html))
 
 (defn show-timeout [ms]
-  (info "timed out. e.g. took longer that " ms "ms"))
+  (cleanup)
+  (alert "timed out. e.g. took longer that " ms "ms"))

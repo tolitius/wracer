@@ -1,6 +1,7 @@
 (ns wracer
   (:require [wracer.render :refer [searching render winner show-timeout]]
             [wracer.tools :refer [info]]
+            [clojure.browser.repl]
             [goog.net.XhrIo :as xhr]
             [cljs.core.async :as async :refer [chan timeout <!]])
   (:require-macros
@@ -40,9 +41,9 @@
 
 
 
-;; playground...
+;; (not in use) playground:
 
-(defn search-all [q]
+#_(defn search-all [q]
   (searching [:.yahoo :.google :.bing])
   (go
     (render :.google (<! (GET (str "/google?q=" q))))
