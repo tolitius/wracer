@@ -1,19 +1,19 @@
-##connecting clojurescript repl to the browser
+##Connecting ClojureScript REPL to the browser
 
-all the below are entered into a `wracer` repl (start `lein repl` before typing).
+all here is entered into a `wracer` repl (e.g. start `lein repl` before typing)
 
-###start the app with a browser repl attached to it
+###Start the app with a browser REPL attached to it
 
 ```clojure
 (require '[wracer.brepl :refer [with-repl]])
 (with-repl)
 ```
 
-it will start the app (e.g. no need to `lein ring server` in a separate terminal), and will host the repl
+it will start the app (e.g. no need to `lein ring server` in a separate terminal), and will host the REPL
 
-Right after this is done, refresh/go to the web app in a browser, this will have it connect to this hosted repl
+Right after it's done, _refresh/go to_ the web app in a browser, this will have it connect to this hosted REPL
 
-###accessing DOM elements via repl
+###Accessing DOM elements via REPL
 
 Bring in dommy (or your favorite clojurescript dom manipulation lib):
 
