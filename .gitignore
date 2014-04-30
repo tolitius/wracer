@@ -3,8 +3,8 @@
 /classes
 /checkouts
 /resources/public/cljs/*
+/resources/public/js/wracer*
 out
-wracer.js
 pom.xml
 *.jar
 *.class

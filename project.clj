@@ -7,7 +7,7 @@
 
   :dependencies [[compojure "1.1.6"]
                  [ring "1.2.1"]
-                 [org.clojure/clojurescript "0.0-2030"]
+                 [org.clojure/clojurescript "0.0-2197"]
                  [org.clojure/clojure "1.5.1"]
                  [prismatic/dommy "0.1.2"]
                  [clj-http "0.9.0"]
@@ -16,7 +16,7 @@
 
   :plugins [[lein-ring "0.8.10"]
             [com.cemerick/austin "0.1.3"]
-            [lein-cljsbuild "1.0.2"]]
+            [lein-cljsbuild "1.0.3"]]
 
   :hooks [leiningen.cljsbuild]
 
