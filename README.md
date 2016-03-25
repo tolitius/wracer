@@ -33,7 +33,7 @@ It of course has nothing to do with real world benchmarking of any kind, but it 
 ## usage / start the app
 
 ```
-lein ring server
+lein do clean, ring server
 ```
 
 ## license
